@@ -12,7 +12,7 @@ function StopWatch() {
     if (isRunning) {
       intervalRef.current = setInterval(() => {
         setElapsTime(Date.now() - startTime.current)
-      }, 10)
+      }, 15)
     }
 
     return () => {
